@@ -16,7 +16,7 @@ export const Feed: React.FC = () => {
             <p>Loading...</p>
           ) : (
             feed?.map((item: any, index: number) => (
-              <FeedItem key={index} item={item} />
+              <FeedItem key={item.id} item={item} />
             ))
           )}
         </div>
